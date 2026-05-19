@@ -6,7 +6,13 @@ app.use(express.json());
 // Jalur tes dasar
 app.get('/api', (req, res) => {
   res.json({ 
-    message: "Halo! Express berjalan sukses menggunakan Node.js bawaan Herd." 
+    message: "Halo! Express berjalan sukses menggunakan Node.js." 
+  });
+});
+
+app.get('/api/duwa', (req, res) => {
+  res.json({ 
+    message: "Halo! Duwa" 
   });
 });
 
